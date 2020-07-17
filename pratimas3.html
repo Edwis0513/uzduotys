@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //  3. Sukurkite funkciją,kuri priims du paramterus ir grąžins tą parametrą, kuris yra arčiausiai skaičiaus 
+      // 100.Pvz.: fn(101, 81) grąžins 101
+
+const numbers = (n1,n2) => {
+    const goal = 100
+    return Math.abs(n1 - goal) < Math.abs(n2 - goal) ? n1 : n2
+}
+    console.log(numbers(99,110))
+
+    </script>
+</body>
+</html>
