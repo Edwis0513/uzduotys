@@ -17,8 +17,13 @@
         const h1 = document.createElement("h1");
         document.body.append(h1);
         nameInput.addEventListener("blur", e => {
-            const string = h1.textContent += nameInput.value + " ";
+            if ( h1.textContent === "") {
+                const string = h1.textContent += nameInput.value;
+            }else {
+                const string = h1.textContent += ", " + nameInput.value;
+            }
         })
+
     </script>
 </body>
 
